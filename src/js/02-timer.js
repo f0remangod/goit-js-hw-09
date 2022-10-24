@@ -15,6 +15,7 @@ const refs = {
 refs.startBtn.disabled = true;
 refs.startBtn.addEventListener('click', onStartClick);
 let ms = 0;
+let selectedTime = 0;
 
 const options = {
   enableTime: true,
@@ -61,7 +62,6 @@ function convertMs(ms) {
   );
 
   return { days, hours, minutes, seconds };
-  //   console.log(convertMs(ms));
 }
 
 function addLeadingZero(value) {
